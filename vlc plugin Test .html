@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+       width="640"
+       height="480"
+       id="vlcplayer">
+</embed>
+<script language="Javascript">
+    <!--
+    var vlc = document.getElementById("vlcplayer");
+    function player(vid) {
+        try {
+            var options = [];
+            var id = vlc.playlist.add(vid,'Video',options);
+            vlc.playlist.playItem(id);
+            vlc.video.fullscreen = true;
+        }
+        catch (ex) {
+           // alert(ex);
+        }
+    }
+    function mute(){
+        vlc.audio.toggleMute();
+    }
+
+    function play(){
+        vlc.playlist.play();
+    }
+
+    function stop(){
+        vlc.playlist.stop();
+    }
+
+    function pause(){
+        vlc.playlist.togglePause();
+    }
+
+    function fullscreen(){
+        vlc.video.toggleFullscreen();
+    }
+
+    player('http://212.1.244.118/hls/1tvsd.m3u8');
+    //!-->
+</script>
+</body>
+</html>
